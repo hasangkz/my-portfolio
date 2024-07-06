@@ -1,76 +1,98 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from '../assets/projects/eticaret.png';
+import project2 from '../assets/projects/hasandan.png';
+import project3 from '../assets/projects/wp.png';
+import project4 from '../assets/projects/threads.png';
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I have 3 years of experience in software development. I am a fast learner, have high problem solving skills and are prone to teamwork. In the projects I am involved in, I not only write code, but also think in detail about how the product we produce will respond to the end user and aim to contribute to my team with a solution-oriented approach. In addition to constantly improving my technical knowledge, I aim to become a talented team leader by increasing my communication and collaboration skills. I am someone who follows technology closely and does not neglect to integrate new trends into my own projects.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const EDUCATION = `I studied computer engineering at Fenerbahçe University with a full scholarship. I grasped the basics of programming and the deep philosophy of algorithms. "How to write good code?" instead of "How can I be a good engineer?" I learned the answer to the question. I managed the university's software club for 2 years. Together with my team, we planned the organization of various software events and projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: 'Dec. 2022 - Present',
+    role: 'Full Stack Developer',
+    company: 'Cormind Inc.',
+    description: `I had the chance to work with the CTO of the company where we serve Turkey's largest production
+factories. We developed the product with my team on developing and maintaining web applications using Typescript, React.js and Node.js industry 4.0 software in order to catch up with the technology era for the leading factories in the production sector. Implemented RESTful APIs and integrated with Postgres databases. Collaborated with stakeholders to define project requirements and timelines. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on time`,
+    technologies: [
+      'Typescript',
+      'React.js',
+      'Node.js',
+      'GraphQL',
+      'Redis',
+      'Docker',
+      'Postgres',
+    ],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: 'June 2022 - Sep. 2022',
+    role: 'Full Stack Developer',
+    company: 'VBT Software',
+    description: `At VBT, one of Turkey's largest software companies, I learned how software projects are carried out,
+how agile methods are used in software processes, and computer architecture. Designed and developed for web applications.`,
+    technologies: ['Javascript', 'Java', 'Kafka', 'Hibernate', 'Postgres'],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: 'Dec. 2021 - May 2022',
+    role: 'Frontend Developer',
+    company: 'Flalingo',
+    description: `I had my first professional software development experience at Flalingo, a startup based in Germany. I completely rebuilt the frontend of the application with React. My work was appreciated and I was promoted from intern to the main team. Developed and maintained web applications using JavaScript, React.js, and Node.js.`,
+    technologies: ['HTML', 'CSS', 'Javascript', 'React.js'],
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "Task Management App",
+    title: 'Hasandan',
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      'Inspired by sahibinden.com, I created an e-commerce site for myself. There are many features such as adding, deleting and editing products, adding products to favorites and categories.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'React.js',
+      'React Query',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+    ],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
-    title: "Blogging Platform",
+    title: 'Threads',
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      'To better understand why the Threads application suddenly became so popular and why it suddenly became an application that no one uses, I wanted to make the application myself. There are features such as adding and removing friends, suggested users, messaging features, creating and replying to threads, and being able to interact with threads.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'React.js',
+      'Express.js',
+      'SocketIO',
+      'MongoDB',
+    ],
+  },
+  {
+    title: 'WhatsApp',
+    image: project3,
+    description:
+      'I developed a WhatsApp application that I connected with Google services. Features such as adding people, messaging, and creating a chat room are available.',
+    technologies: ['HTML', 'CSS', 'React.js', 'Firebase'],
+  },
+  {
+    title: 'FBucks',
+    image: project1,
+    description:
+      "I created an order tracking platform for my university's cafe and made it available. I was inspired by Starbucks.",
+    technologies: ['HTML', 'CSS', 'React.js', 'Express.js', 'MongoDB'],
   },
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: 'Atasehir / Istanbul',
+  phoneNo: '+90 545 302 8583',
+  email: 'hassan.gokgoz@gmail.com',
+  medium: 'medium.com/@hassan.gokgoz',
+  linkedin: 'linkedin.com/in/hasangokgoz',
+  stackoverflow: 'stackoverflow.com/users/16951957/hasangkz',
+  github: 'github.com/hasangkz',
 };
