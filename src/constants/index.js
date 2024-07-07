@@ -1,7 +1,8 @@
 import project1 from '../assets/projects/eticaret.png';
 import project2 from '../assets/projects/hasandan.png';
-import project3 from '../assets/projects/wp.png';
 import project4 from '../assets/projects/threads.png';
+import project5 from '../assets/projects/ois.png';
+import project6 from '../assets/projects/pentapp.png';
 
 export const HERO_CONTENT = `I have 3 years of experience in software development. I am a fast learner, have high problem solving skills and are prone to teamwork. In the projects I am involved in, I not only write code, but also think in detail about how the product we produce will respond to the end user and aim to contribute to my team with a solution-oriented approach. In addition to constantly improving my technical knowledge, I aim to become a talented team leader by increasing my communication and collaboration skills. I am someone who follows technology closely and does not neglect to integrate new trends into my own projects.`;
 
@@ -45,6 +46,7 @@ export const PROJECTS = [
   {
     title: 'Hasandan',
     image: project2,
+    link: 'https://github.com/hasangkz/e-commerce',
     description:
       'Inspired by sahibinden.com, I created an e-commerce site for myself. There are many features such as adding, deleting and editing products, adding products to favorites and categories.',
     technologies: [
@@ -60,6 +62,7 @@ export const PROJECTS = [
   {
     title: 'Threads',
     image: project4,
+    link: 'https://github.com/hasangkz/threads_frontend',
     description:
       'To better understand why the Threads application suddenly became so popular and why it suddenly became an application that no one uses, I wanted to make the application myself. There are features such as adding and removing friends, suggested users, messaging features, creating and replying to threads, and being able to interact with threads.',
     technologies: [
@@ -72,18 +75,35 @@ export const PROJECTS = [
     ],
   },
   {
-    title: 'WhatsApp',
-    image: project3,
+    title: 'PENTApp',
+    image: project6,
+    link: 'https://github.com/hasangkz/PENTApp',
     description:
-      'I developed a WhatsApp application that I connected with Google services. Features such as adding people, messaging, and creating a chat room are available.',
-    technologies: ['HTML', 'CSS', 'React.js', 'Firebase'],
+      'I developed "PENTA", a social media platform where people anonymously voice their opinions and live day to day.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'React.js',
+      'React Query',
+      'Node.js',
+      'MongoDB',
+    ],
   },
   {
     title: 'FBucks',
     image: project1,
+    link: 'https://github.com/hasangkz/fbucks_frontend',
     description:
-      "I created an order tracking platform for my university's cafe and made it available. I was inspired by Starbucks.",
+      "I created an order tracking platform for my university's cafe and made it available. I was inspired by Starbucks. Many features are active, such as preparing invoices, viewing package status, reviewing sales status on a daily, weekly and monthly basis.",
     technologies: ['HTML', 'CSS', 'React.js', 'Express.js', 'MongoDB'],
+  },
+  {
+    title: 'OIS',
+    image: project5,
+    link: 'https://github.com/hasangkz/ois',
+    description:
+      'I prepared an ois system for Fenerbahçe University. I prepared a system to track students and see which student can take which course.',
+    technologies: ['HTML', 'CSS', 'React.js', 'Java', 'Hibernate', 'Postgres'],
   },
 ];
 
