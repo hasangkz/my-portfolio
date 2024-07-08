@@ -2,6 +2,7 @@ import About from './components/About';
 import Contant from './components/Contant';
 import Educations from './components/Educations';
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Techs from './components/Techs';
@@ -28,6 +29,8 @@ function App() {
         <Projects />
         <br />
         <Contant />
+        <br />
+        <Footer />
       </div>
     </div>
   );

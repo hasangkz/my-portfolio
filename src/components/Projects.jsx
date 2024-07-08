@@ -45,7 +45,7 @@ const Projects = () => {
         variants={container}
         initial='hidden'
         animate='visible'
-        className='container flex flex-wrap items-center justify-center p-6 gap-x-24 gap-y-6 my-20'
+        className='container flex flex-wrap items-center justify-center p-8 gap-x-28 gap-y-40 my-20'
       >
         {PROJECTS.map((project, index) => (
           <motion.div
@@ -69,11 +69,11 @@ const Projects = () => {
                 {project.description}
               </p>
               <div className='flex items-center justify-between mt-6 mb-4'>
-                <div className='flex items-center gap-5'>
+                <div className='flex items-center gap-4 w-ful'>
                   {project.technologies.map((icon, index) => (
                     <div
                       key={icon}
-                      className='border border-white/[0.2] rounded-full bg-white  lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center'
+                      className='border border-white/[0.2] rounded-full bg-white md:w-10 md:h-10 w-6 h-6 flex justify-center items-center'
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
                       <img src={icon} alt='icon' className='p-2' />

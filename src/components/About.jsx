@@ -55,9 +55,9 @@ const About = () => {
                 variant='solid'
               >
                 <a
-                  href='https://drive.google.com/file/d/1JlXGTegldv6JTJ-4zIGhG8nKwI2ZNmlY/view?usp=sharing'
+                  href='https://drive.google.com/file/d/1wMzFoaWdVONvtQeeDGaeJAbMPtawajSu/view'
                   download={
-                    'https://drive.google.com/file/d/1JlXGTegldv6JTJ-4zIGhG8nKwI2ZNmlY/view?usp=sharing'
+                    'https://drive.google.com/file/d/1wMzFoaWdVONvtQeeDGaeJAbMPtawajSu/view'
                   }
                   target='_blank'
                 >
