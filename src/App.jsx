@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Techs from './components/Techs';
 
 function App() {
+  console.log('Hello there! Welcome my website :)');
   return (
     <div className='overflow-x-hidden text-neutral-100 antialiased '>
       <div className='fixed top-0 -z-10 h-full w-full'>
@@ -15,11 +16,17 @@ function App() {
 
       <div className='container mx-auto px-6'>
         <Navbar />
+        <br />
         <About />
+        <br />
         <Techs />
+        <br />
         <Experience />
+        <br />
         <Educations />
+        <br />
         <Projects />
+        <br />
         <Contant />
       </div>
     </div>

@@ -1,4 +1,3 @@
-// import { CONTACT } from '../constants/index';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {
@@ -12,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { MdEmail } from 'react-icons/md';
 import { ToastContainer, toast } from 'react-toastify';
+import { motion } from 'framer-motion';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contant = () => {
@@ -53,91 +53,104 @@ const Contant = () => {
 
   return (
     <div className='border-b border-neutral-900 pb-4'>
-      <h1 className='my-20 text-center text-5xl font-thin'>Get in Touch</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.8 }}
+        className='my-20 text-center text-5xl font-thin'
+      >
+        Get in Touch
+      </motion.h1>
       <Flex align={'center'} justify={'center'}>
         <VStack align='stretch' spacing={20}>
-          <form ref={form} onSubmit={sendEmail}>
-            <FormControl>
-              <FormLabel>Name</FormLabel>
-              <Input
-                w={400}
-                h={30}
-                p={5}
-                borderRadius={10}
-                required={true}
-                type='text'
-                color={'black'}
-                size={'lg'}
-                value={input.name}
-                name='name'
-                onChange={(e) =>
-                  setInput((input) => ({
-                    ...input,
-                    name: e.target.value,
-                  }))
-                }
-              />
-            </FormControl>
-            <br />
-            <FormControl>
-              <FormLabel>Email</FormLabel>
-              <Input
-                w={400}
-                h={30}
-                p={5}
-                borderRadius={10}
-                required={true}
-                type='email'
-                name='email'
-                color={'black'}
-                size={'lg'}
-                value={input.email}
-                onChange={(e) =>
-                  setInput((input) => ({
-                    ...input,
-                    email: e.target.value,
-                  }))
-                }
-              />
-            </FormControl>
-            <br />
-            <FormControl>
-              <FormLabel>Message</FormLabel>
-              <Textarea
-                w={400}
-                h={200}
-                p={5}
-                borderRadius={10}
-                required={true}
-                type={'text'}
-                name='message'
-                color={'black'}
-                size={'lg'}
-                value={input.message}
-                onChange={(e) =>
-                  setInput((input) => ({
-                    ...input,
-                    message: e.target.value,
-                  }))
-                }
-              />
-            </FormControl>
-            <br />
-            <div className='flex items-center justify-center align-middle'>
-              <Button
-                className='send-button'
-                leftIcon={<MdEmail />}
-                loadingText='Sending...'
-                size='lg'
-                type='submit'
-                colorScheme='pink'
-                variant='solid'
-              >
-                Send me!
-              </Button>
-              <ToastContainer />
-            </div>
-          </form>
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 1 }}
+          >
+            <form ref={form} onSubmit={sendEmail}>
+              <FormControl>
+                <FormLabel>Name</FormLabel>
+                <Input
+                  w={400}
+                  h={30}
+                  p={5}
+                  borderRadius={10}
+                  required={true}
+                  type='text'
+                  color={'black'}
+                  size={'lg'}
+                  value={input.name}
+                  name='name'
+                  onChange={(e) =>
+                    setInput((input) => ({
+                      ...input,
+                      name: e.target.value,
+                    }))
+                  }
+                />
+              </FormControl>
+              <br />
+              <FormControl>
+                <FormLabel>Email</FormLabel>
+                <Input
+                  w={400}
+                  h={30}
+                  p={5}
+                  borderRadius={10}
+                  required={true}
+                  type='email'
+                  name='email'
+                  color={'black'}
+                  size={'lg'}
+                  value={input.email}
+                  onChange={(e) =>
+                    setInput((input) => ({
+                      ...input,
+                      email: e.target.value,
+                    }))
+                  }
+                />
+              </FormControl>
+              <br />
+              <FormControl>
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                  w={400}
+                  h={200}
+                  p={5}
+                  borderRadius={10}
+                  required={true}
+                  type={'text'}
+                  name='message'
+                  color={'black'}
+                  size={'lg'}
+                  value={input.message}
+                  onChange={(e) =>
+                    setInput((input) => ({
+                      ...input,
+                      message: e.target.value,
+                    }))
+                  }
+                />
+              </FormControl>
+              <br />
+              <div className='flex items-center justify-center align-middle'>
+                <Button
+                  className='send-button'
+                  leftIcon={<MdEmail />}
+                  loadingText='Sending...'
+                  size='lg'
+                  type='submit'
+                  colorScheme='pink'
+                  variant='solid'
+                >
+                  Send me!
+                </Button>
+                <ToastContainer />
+              </div>
+            </form>
+          </motion.div>
         </VStack>
       </Flex>
     </div>

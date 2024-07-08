@@ -2,22 +2,56 @@ import { FaLocationArrow } from 'react-icons/fa';
 import { PROJECTS } from '../constants/index';
 import { Container } from './3d-pin';
 import { Button } from '@chakra-ui/react';
-
+import { motion } from 'framer-motion';
 const Projects = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   const handleProject = (link) => {
     window.open(link, '_blank');
   };
+
   return (
     <div className='border-b border-neutral-900 pb-4'>
-      <h1 className='my-20 text-center text-5xl font-thin'>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.8 }}
+        className='my-20 text-center text-5xl font-thin'
+      >
         A small selection of{' '}
         <span className='text-purple-400'>recent projects</span>{' '}
-      </h1>
-      <div className='flex flex-wrap items-center justify-center p-6 gap-x-24 gap-y-6 my-20'>
+      </motion.h1>
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        variants={container}
+        initial='hidden'
+        animate='visible'
+        className='container flex flex-wrap items-center justify-center p-6 gap-x-24 gap-y-6 my-20'
+      >
         {PROJECTS.map((project, index) => (
-          <div
+          <motion.div
             key={index}
-            className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
+            variants={item}
+            className='item lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]'
           >
             <Container title={project.link} href={project.link}>
               <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
@@ -58,9 +92,9 @@ const Projects = () => {
                 </div>
               </div>
             </Container>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

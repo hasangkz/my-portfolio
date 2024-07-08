@@ -1,8 +1,8 @@
-import project1 from '../assets/projects/eticaret.png';
-import project2 from '../assets/projects/hasandan.png';
-import project4 from '../assets/projects/threads.png';
-import project5 from '../assets/projects/ois.png';
-import project6 from '../assets/projects/pentapp.png';
+import project1 from '../assets/projects/eticaret.jpg';
+import project2 from '../assets/projects/hasandan.jpg';
+import project4 from '../assets/projects/threads.jpg';
+import project5 from '../assets/projects/ois.jpg';
+import project6 from '../assets/projects/pentapp.jpg';
 
 import reactSVG from '../assets/usedTechs/react.svg';
 import nodejsSVG from '../assets/usedTechs/nodejs.svg';
@@ -24,6 +24,7 @@ export const EXPERIENCES = [
     year: 'Dec. 2022 - Present',
     role: 'Full Stack Developer',
     company: 'Cormind Inc.',
+    location: 'Istanbul',
     description: `I had the chance to work with the CTO of the company where we serve Turkey's largest production
 factories. We developed the product with my team on developing and maintaining web applications using Typescript, React.js and Node.js industry 4.0 software in order to catch up with the technology era for the leading factories in the production sector. Implemented RESTful APIs and integrated with Postgres databases. Collaborated with stakeholders to define project requirements and timelines. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on time.`,
     technologies: [
@@ -40,6 +41,7 @@ factories. We developed the product with my team on developing and maintaining w
     year: 'June 2022 - Sep. 2022',
     role: 'Full Stack Developer',
     company: 'VBT Software',
+    location: 'Istanbul',
     description: `At VBT, one of Turkey's largest software companies, I learned how software projects are carried out,
 how agile methods are used in software processes, and computer architecture. Designed and developed for web applications.`,
     technologies: ['Javascript', 'Java', 'Kafka', 'Hibernate', 'Postgres'],
@@ -48,6 +50,7 @@ how agile methods are used in software processes, and computer architecture. Des
     year: 'Dec. 2021 - May 2022',
     role: 'Frontend Developer',
     company: 'Flalingo',
+    location: 'Germany',
     description: `I had my first professional software development experience at Flalingo, a startup based in Germany. I completely rebuilt the frontend of the application with React. My work was appreciated and I was promoted from intern to the main team. Developed and maintained web applications using JavaScript, React.js, and Node.js.`,
     technologies: [
       'HTML',
