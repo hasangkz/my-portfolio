@@ -7,3 +7,24 @@
 :root {
   font-family: 'Poppins', sans-serif;
 }
+
+.send-button {
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(90deg, #7415ab 0%, #6d2e7b 100%);
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
+  border-radius: 30px;
+  transition: 500ms;
+  transform: translateY(0.5);
+}
+
+.send-button:hover {
+  transition: 900ms;
+  padding: 10px 70px;
+  transform: translateY(-10px);
+  background: #fff;
+  color: #7415ab;
+}
