@@ -19,7 +19,7 @@ const Educations = () => {
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'
           >
-            <p className='mb-2 text-sm text-neutral-400'>2020-2024</p>
+            <p className='mb-2 text-base text-neutral-400'>2020-2024</p>
             <span className='text-m text-neutral-600'>
               Bachelor&apos;s degree
             </span>
@@ -31,7 +31,7 @@ const Educations = () => {
             className='w-full max-w-xl lg:w-3/4'
           >
             <h6 className='mb-2 font-semibold'>Computer Engineering</h6>
-            <p className='mb-6 text-neutral-400'>{EDUCATION}</p>
+            <p className='mb-6 text-neutral-400 text-lg'>{EDUCATION}</p>
           </motion.div>
         </div>
         <div className='mb-10 flex flex-wrap lg:justify-center'>
@@ -41,7 +41,7 @@ const Educations = () => {
             transition={{ duration: 1 }}
             className='w-full lg:w-1/4'
           >
-            <p className='mb-2 text-sm text-neutral-400'>2022-2023</p>
+            <p className='mb-2 text-base text-neutral-400 '>2022-2023</p>
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -52,7 +52,7 @@ const Educations = () => {
             <h6 className='mb-2 font-semibold'>
               CS50: Introduction to Computer Science
             </h6>
-            <p className='mb-6 text-neutral-400'>{EDUCATION_CS50}</p>
+            <p className='mb-6 text-neutral-400 text-lg'>{EDUCATION_CS50}</p>
           </motion.div>
         </div>
       </motion.div>

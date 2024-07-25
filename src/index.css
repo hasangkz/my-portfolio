@@ -12,11 +12,11 @@
   font-weight: 300;
   font-size: 22px;
   color: #fff;
-  background: linear-gradient(90deg, #7415ab 0%, #6d2e7b 100%);
-  padding: 10px 30px;
+  background: linear-gradient(90deg, #b566e2 0%, #7b3e89 100%);
+  padding: 10px 40px;
   border: 1px solid #fff;
   box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
-  border-radius: 30px;
+  border-radius: 14px;
   transition: 500ms;
   transform: translateY(0.5);
 }
@@ -31,7 +31,7 @@
 
 .download-button {
   padding: 0.5rem 2.5rem;
-  background-color: #613a78;
+  background: linear-gradient(180deg, #b977df 0%, #7a1e8f 100%);
   border: none;
   user-select: none;
   cursor: pointer;
@@ -41,6 +41,7 @@
   transition: all 0.5s linear;
   color: #fff;
   position: relative;
+  border-radius: 14px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
@@ -53,7 +54,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-
+  border-radius: 14px;
   animation: move-right-side 1s ease infinite;
 }
 

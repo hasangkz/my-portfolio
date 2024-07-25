@@ -21,7 +21,7 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className='w-full lg:w-1/4'
             >
-              <p className='mb-2 text-sm text-neutral-400'>{item.year}</p>
+              <p className='mb-2 text-base text-neutral-400'>{item.year}</p>
               <span className='text-m text-neutral-600'>{item.location}</span>
             </motion.div>
             <motion.div
@@ -31,14 +31,17 @@ const Experience = () => {
               className='w-full max-w-xl lg:w-3/4'
             >
               <h6 className='mb-2 font-semibold'>
-                {item.role} <span className='text-sm text-neutral-600'>/</span>{' '}
-                <span className='text-sm text-red-500'>{item.company}</span>
+                {item.role}{' '}
+                <span className='text-base text-neutral-600'>/</span>{' '}
+                <span className='text-base text-red-500'>{item.company}</span>
               </h6>
-              <p className='mb-6 text-neutral-400'>{item.description}</p>
+              <p className='mb-6 text-neutral-400 text-lg'>
+                {item.description}
+              </p>
               <div className='flex flex-wrap gap-4'>
                 {item.technologies.map((tech, index) => (
                   <span
-                    className='rounded bg-neutral-300 px-2 py-1 text-sm font-bold text-purple-600'
+                    className='rounded bg-neutral-300 px-2 py-1 text-base font-bold text-purple-600'
                     key={index}
                   >
                     {tech}

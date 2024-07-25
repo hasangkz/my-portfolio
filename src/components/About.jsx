@@ -24,7 +24,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className='bg-gradient-to-r from-purple-300 via-slate-500 to-purple-900 bg-clip-text text-4xl tracking-tight text-transparent'
+              className='bg-gradient-to-r from-purple-300 via-slate-500 to-purple-400 bg-clip-text text-4xl tracking-tight text-transparent'
             >
               Software Developer
             </motion.span>
@@ -33,7 +33,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.2 }}
-              className='my-4 max-w-xl py-8 font-light'
+              className='my-4 max-w-xl py-8 font-light text-lg'
             >
               {ABOUT_ME}
             </motion.p>

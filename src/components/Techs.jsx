@@ -1,4 +1,12 @@
-import { FaJava, FaHtml5, FaCss3, FaReact, FaDocker } from 'react-icons/fa';
+import {
+  FaJava,
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaDocker,
+  FaNodeJs,
+  FaAws,
+} from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import {
   SiTypescript,
@@ -131,7 +139,24 @@ const Techs = () => {
         >
           <SiTypescript className='text-6xl text-sky-600' />
         </motion.div>
-        <Tooltip id='react-tooltip' />
+        <motion.div
+          data-tooltip-id='nodejs-tooltip'
+          data-tooltip-content='Nodejs'
+          data-tooltip-place='top'
+          variants={item(1.7)}
+          initial='initial'
+          animate='animate'
+          whileHover={{ scale: 1.2, rotate: -90 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: '100%',
+          }}
+          className='rounded-2xl item border-4 border-neutral-100 p-4'
+        >
+          <FaNodeJs className='text-6xl text-green-700' />
+        </motion.div>
+        <Tooltip id='nodejs-tooltip' />
         <motion.div
           data-tooltip-id='react-tooltip'
           data-tooltip-content='React'
@@ -239,7 +264,24 @@ const Techs = () => {
         >
           <FaDocker className='text-6xl text-blue-800' />
         </motion.div>
-        <Tooltip id='mongo-tooltip' />
+        <motion.div
+          data-tooltip-id='aws-tooltip'
+          data-tooltip-content='AWS'
+          data-tooltip-place='top'
+          variants={item(1.7)}
+          initial='initial'
+          animate='animate'
+          whileHover={{ scale: 1.2, rotate: -90 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: '100%',
+          }}
+          className='rounded-2xl item border-4 border-neutral-100 p-4'
+        >
+          <FaAws className='text-6xl text-orange-300' />
+        </motion.div>
+        <Tooltip id='aws-tooltip' />
         <motion.div
           data-tooltip-id='mongo-tooltip'
           data-tooltip-content='MongoDB'

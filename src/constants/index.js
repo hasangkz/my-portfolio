@@ -22,7 +22,7 @@ export const EDUCATION_CS50 = `I successfully completed the CS50 course organize
 export const EXPERIENCES = [
   {
     year: 'Dec. 2022 - Present',
-    role: 'Full Stack Developer',
+    role: 'Software Engineer',
     company: 'Cormind Inc.',
     location: 'Istanbul',
     description: `I had the chance to work with the CTO of the company where we serve Turkey's largest production
@@ -39,7 +39,7 @@ factories. We developed the product with my team on developing and maintaining w
   },
   {
     year: 'June 2022 - Sep. 2022',
-    role: 'Software Developer',
+    role: 'Full Stack Developer',
     company: 'VBT Software',
     location: 'Istanbul',
     description: `At VBT, one of Turkey's largest software companies, I learned how software projects are carried out,
@@ -48,7 +48,7 @@ how agile methods are used in software processes, and computer architecture. Des
   },
   {
     year: 'Dec. 2021 - May 2022',
-    role: 'Software Developer',
+    role: 'Full Stack Developer',
     company: 'Flalingo',
     location: 'Germany',
     description: `I had my first professional software development experience at Flalingo, a startup based in Germany. I completely rebuilt the frontend of the application with React. My work was appreciated and I was promoted from intern to the main team. Developed and maintained web applications using JavaScript, React.js, and Node.js.`,
