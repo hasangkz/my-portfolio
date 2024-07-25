@@ -41,7 +41,6 @@
   transition: all 0.5s linear;
   color: #fff;
   position: relative;
-  border-radius: 14px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
@@ -54,7 +53,6 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  border-radius: 14px;
   animation: move-right-side 1s ease infinite;
 }
 
@@ -66,8 +64,7 @@
 }
 
 .download-button:hover {
-  background-color: #fff;
-  color: #613a78;
+  font-size: x-large;
 }
 
 @keyframes move-right-side {

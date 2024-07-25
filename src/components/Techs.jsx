@@ -138,6 +138,7 @@ const Techs = () => {
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
           <SiTypescript className='text-6xl text-sky-600' />
+          <Tooltip id='nodejs-tooltip' />
         </motion.div>
         <motion.div
           data-tooltip-id='nodejs-tooltip'
@@ -156,7 +157,7 @@ const Techs = () => {
         >
           <FaNodeJs className='text-6xl text-green-700' />
         </motion.div>
-        <Tooltip id='nodejs-tooltip' />
+        <Tooltip id='react-tooltip' />
         <motion.div
           data-tooltip-id='react-tooltip'
           data-tooltip-content='React'
@@ -264,6 +265,7 @@ const Techs = () => {
         >
           <FaDocker className='text-6xl text-blue-800' />
         </motion.div>
+        <Tooltip id='aws-tooltip' />
         <motion.div
           data-tooltip-id='aws-tooltip'
           data-tooltip-content='AWS'
@@ -281,7 +283,7 @@ const Techs = () => {
         >
           <FaAws className='text-6xl text-orange-300' />
         </motion.div>
-        <Tooltip id='aws-tooltip' />
+        <Tooltip id='mongo-tooltip' />
         <motion.div
           data-tooltip-id='mongo-tooltip'
           data-tooltip-content='MongoDB'
