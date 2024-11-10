@@ -1,5 +1,6 @@
 import About from './components/About';
 import Contant from './components/Contant';
+import Documents from './components/Documents';
 import Educations from './components/Educations';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
@@ -12,12 +13,11 @@ function App() {
   return (
     <div className='overflow-x-hidden text-neutral-100 antialiased '>
       <div className='fixed top-0 -z-10 h-full w-full'>
-        <div className='absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'></div>
+        <div className='absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#0e232b_40%,#3e7283_90%,#38484f_90%)]'></div>
       </div>
 
-      <div className='container mx-auto px-6'>
+      <div className='container mx-auto px-4'>
         <Navbar />
-        <br />
         <About />
         <br />
         <Techs />
@@ -27,6 +27,8 @@ function App() {
         <Educations />
         <br />
         <Projects />
+        <br />
+        <Documents />
         <br />
         <Contant />
         <br />

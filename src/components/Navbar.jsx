@@ -39,22 +39,22 @@ const Navbar = () => {
       </div>
       <div className='m-4 flex items-center justify-center gap-4 text-2xl'>
         <FaLinkedinIn
-          color='gray'
+          color='white'
           cursor={'pointer'}
           onClick={() => handleRedirect('linkedin')}
         />
         <FaGithub
-          color='gray'
+          color='white'
           cursor={'pointer'}
           onClick={() => handleRedirect('github')}
         />
         <FaMedium
-          color='gray'
+          color='white'
           cursor={'pointer'}
           onClick={() => handleRedirect('medium')}
         />
         <FaStackOverflow
-          color='gray'
+          color='white'
           cursor={'pointer'}
           onClick={() => handleRedirect('stackOverflow')}
         />

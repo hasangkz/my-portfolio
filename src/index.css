@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Doto', sans-serif;
 }
 
 .send-button {
   font-weight: 300;
   font-size: 22px;
   color: #fff;
-  background: linear-gradient(90deg, #b566e2 0%, #7b3e89 100%);
+  background: linear-gradient(90deg, #3e7283 0%, #38484f 100%);
   padding: 10px 40px;
   border: 1px solid #fff;
   box-shadow: rgb(0, 0, 0) 5px 5px 0px 0px;
@@ -26,12 +26,12 @@
   padding: 10px 70px;
   transform: translateY(-10px);
   background: #fff;
-  color: #613a78;
+  color: #ef4444;
 }
 
 .download-button {
   padding: 0.5rem 2.5rem;
-  background: linear-gradient(180deg, #b977df 0%, #7a1e8f 100%);
+  /* background: linear-gradient(180deg, #3e7283 40%, #38484f 80%); */
   border: none;
   user-select: none;
   cursor: pointer;
@@ -47,7 +47,7 @@
 .download-button:hover::after,
 .download-button:hover::before {
   content: '';
-  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+  background: linear-gradient(90deg, #3e4f55 0%, #1a3b4a 100%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -56,29 +56,21 @@
   animation: move-right-side 1s ease infinite;
 }
 
-.download-button:hover::before {
-  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
-  inset: 0;
-  animation: move-left-side 1s ease infinite;
-  z-index: -2;
-}
-
 .download-button:hover {
   font-size: x-large;
 }
 
 @keyframes move-right-side {
   0% {
-    inset: 0.3em 0 0 0.3em; /*top | left */
+    inset: 0.3em 0 0 0.3em;
   }
 
   33% {
-    inset: 0 0.3em 0.3em 0; /*right| bottom*/
+    inset: 0 0.3em 0.3em 0;
   }
 
   66% {
-    /* top | right | bottom | left */
-    inset: 1em 0 0 0.5em; /*top | right */
+    inset: 1em 0 0 0.5em;
   }
 
   100% {

@@ -1,20 +1,20 @@
 import {
-  FaJava,
   FaHtml5,
   FaCss3,
   FaReact,
   FaDocker,
   FaNodeJs,
   FaAws,
+  FaPython,
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
 import {
   SiTypescript,
-  SiSpring,
   SiRedis,
   SiGraphql,
   SiMongodb,
   SiPostgresql,
+  SiDjango,
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { Tooltip } from 'react-tooltip';
@@ -178,7 +178,7 @@ const Techs = () => {
         <Tooltip id='java-tooltip' />
         <motion.div
           data-tooltip-id='java-tooltip'
-          data-tooltip-content='Java'
+          data-tooltip-content='Python'
           data-tooltip-place='top'
           variants={item(1.9)}
           initial='initial'
@@ -191,12 +191,12 @@ const Techs = () => {
           }}
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
-          <FaJava className='text-6xl text-gray-300' />
+          <FaPython className='text-6xl text-yellow-400' />
         </motion.div>
         <Tooltip id='spring-tooltip' />
         <motion.div
           data-tooltip-id='spring-tooltip'
-          data-tooltip-content='Spring'
+          data-tooltip-content='Django'
           data-tooltip-place='top'
           variants={item(2)}
           initial='initial'
@@ -209,7 +209,7 @@ const Techs = () => {
           }}
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
-          <SiSpring className='text-6xl text-green-600' />
+          <SiDjango className='text-6xl text-green-300' />
         </motion.div>
         <Tooltip id='graphql-tooltip' />
         <motion.div

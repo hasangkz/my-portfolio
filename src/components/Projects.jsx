@@ -37,7 +37,7 @@ const Projects = () => {
         className='my-20 text-center text-5xl font-thin'
       >
         A small selection of{' '}
-        <span className='text-purple-400'>recent projects</span>{' '}
+        <span className='text-blue-200'>recent projects</span>{' '}
       </motion.h1>
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
@@ -83,12 +83,12 @@ const Projects = () => {
 
                 <div className='flex justify-center items-center'>
                   <Button
-                    className='flex lg:text-xl md:text-xs text-sm text-purple-500'
+                    className='flex lg:text-xl md:text-xs text-sm text-red-500'
                     onClick={() => handleProject(project.link)}
                   >
                     Check Github
                   </Button>
-                  <FaLocationArrow className='ms-2' color='#CBACF9' />
+                  <FaLocationArrow className='ms-2' color='#EF4444' />
                 </div>
               </div>
             </Container>

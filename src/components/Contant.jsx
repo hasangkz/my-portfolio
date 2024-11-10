@@ -151,7 +151,7 @@ const Contant = () => {
               colorScheme='pink'
               variant='solid'
             >
-              Send me
+              Send me your message
             </Button>
             <ToastContainer />
           </div>
