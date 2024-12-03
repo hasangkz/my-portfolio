@@ -58,7 +58,7 @@ const About = () => {
                   }
                   target='_blank'
                 >
-                  Download My Resume
+                  My Resume
                 </a>
               </Button>
             </motion.div>
