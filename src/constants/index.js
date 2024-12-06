@@ -10,7 +10,7 @@ import postgreSVG from '../assets/usedTechs/postgresql.svg';
 import tailwindSVG from '../assets/usedTechs/tailwind.svg';
 import socketSVG from '../assets/usedTechs/socket.svg';
 
-export const ABOUT_ME = `I have 3 years of experience in software development and during this time, I have actively participated in many different projects and expanded my technical knowledge. Thanks to my fast learning ability and strong problem-solving skills, I can produce effective solutions to complex software problems. I understand the importance of being a part of a team and with my inclination to teamwork, I exhibit a constructive and supportive approach to achieve common goals.
+export const ABOUT_ME = `I have 4 years of experience in software development and during this time, I have actively participated in many different projects and expanded my technical knowledge. Thanks to my fast learning ability and strong problem-solving skills, I can produce effective solutions to complex software problems. I understand the importance of being a part of a team and with my inclination to teamwork, I exhibit a constructive and supportive approach to achieve common goals.
 
 In projects, beyond just writing code, I evaluate the user experience, performance and interaction model of the developed product in detail. I contribute to my team with a solution-oriented mindset by considering user needs. While constantly updating my technical competencies, I also keep my goal of becoming a talented and effective team leader alive in the future by improving my communication and collaboration skills.
 
