@@ -14,10 +14,10 @@ import {
   SiGraphql,
   SiMongodb,
   SiPostgresql,
-  SiDjango,
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { Tooltip } from 'react-tooltip';
+import { FaGolang } from 'react-icons/fa6';
 
 const Techs = () => {
   const container = {
@@ -119,7 +119,7 @@ const Techs = () => {
           }}
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
-          <IoLogoJavascript className='text-6xl text-yellow-500' />
+          <IoLogoJavascript className='text-6xl text-yellow-300' />
         </motion.div>
         <Tooltip id='ts-tooltip' />
         <motion.div
@@ -138,24 +138,6 @@ const Techs = () => {
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
           <SiTypescript className='text-6xl text-sky-600' />
-          <Tooltip id='nodejs-tooltip' />
-        </motion.div>
-        <motion.div
-          data-tooltip-id='nodejs-tooltip'
-          data-tooltip-content='Nodejs'
-          data-tooltip-place='top'
-          variants={item(1.7)}
-          initial='initial'
-          animate='animate'
-          whileHover={{ scale: 1.2, rotate: -90 }}
-          whileTap={{
-            scale: 0.8,
-            rotate: -90,
-            borderRadius: '100%',
-          }}
-          className='rounded-2xl item border-4 border-neutral-100 p-4'
-        >
-          <FaNodeJs className='text-6xl text-green-700' />
         </motion.div>
         <Tooltip id='react-tooltip' />
         <motion.div
@@ -175,12 +157,12 @@ const Techs = () => {
         >
           <FaReact className='text-6xl text-blue-500' />
         </motion.div>
-        <Tooltip id='java-tooltip' />
+        <Tooltip id='nodejs-tooltip' />
         <motion.div
-          data-tooltip-id='java-tooltip'
-          data-tooltip-content='Python'
+          data-tooltip-id='nodejs-tooltip'
+          data-tooltip-content='Nodejs'
           data-tooltip-place='top'
-          variants={item(1.9)}
+          variants={item(1.7)}
           initial='initial'
           animate='animate'
           whileHover={{ scale: 1.2, rotate: -90 }}
@@ -191,17 +173,17 @@ const Techs = () => {
           }}
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
-          <FaPython className='text-6xl text-yellow-400' />
+          <FaNodeJs className='text-6xl text-green-700' />
         </motion.div>
-        <Tooltip id='spring-tooltip' />
+        <Tooltip id='go-tooltip' />
         <motion.div
-          data-tooltip-id='spring-tooltip'
-          data-tooltip-content='Django'
+          data-tooltip-id='go-tooltip'
+          data-tooltip-content='Go'
           data-tooltip-place='top'
-          variants={item(2)}
+          variants={item(1.7)}
           initial='initial'
           animate='animate'
-          whileHover={{ scale: 1.2, rotate: 90 }}
+          whileHover={{ scale: 1.2, rotate: -90 }}
           whileTap={{
             scale: 0.8,
             rotate: -90,
@@ -209,7 +191,25 @@ const Techs = () => {
           }}
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
-          <SiDjango className='text-6xl text-green-300' />
+          <FaGolang className='text-6xl text-blue-400' />
+        </motion.div>
+        <Tooltip id='python-tooltip' />
+        <motion.div
+          data-tooltip-id='python-tooltip'
+          data-tooltip-content='Python'
+          data-tooltip-place='top'
+          variants={item(1.7)}
+          initial='initial'
+          animate='animate'
+          whileHover={{ scale: 1.2, rotate: -90 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: '100%',
+          }}
+          className='rounded-2xl item border-4 border-neutral-100 p-4'
+        >
+          <FaPython className='text-6xl text-yellow-500' />
         </motion.div>
         <Tooltip id='graphql-tooltip' />
         <motion.div

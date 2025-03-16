@@ -19,19 +19,12 @@ function App() {
       <div className='container mx-auto px-4'>
         <Navbar />
         <About />
-        <br />
         <Techs />
-        <br />
         <Experience />
-        <br />
         <Educations />
-        <br />
         <Projects />
-        <br />
         <Documents />
-        <br />
         <Contant />
-        <br />
         <Footer />
       </div>
     </div>
