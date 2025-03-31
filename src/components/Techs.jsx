@@ -18,6 +18,7 @@ import {
 import { motion } from 'framer-motion';
 import { Tooltip } from 'react-tooltip';
 import { FaGolang } from 'react-icons/fa6';
+import { RiNextjsFill } from 'react-icons/ri';
 
 const Techs = () => {
   const container = {
@@ -156,6 +157,24 @@ const Techs = () => {
           className='rounded-2xl item border-4 border-neutral-100 p-4'
         >
           <FaReact className='text-6xl text-blue-500' />
+        </motion.div>
+        <Tooltip id='nextjs-tooltip' />
+        <motion.div
+          data-tooltip-id='nextjs-tooltip'
+          data-tooltip-content='Nextjs'
+          data-tooltip-place='top'
+          variants={item(1.7)}
+          initial='initial'
+          animate='animate'
+          whileHover={{ scale: 1.2, rotate: -90 }}
+          whileTap={{
+            scale: 0.8,
+            rotate: -90,
+            borderRadius: '100%',
+          }}
+          className='rounded-2xl item border-4 border-neutral-100 p-4'
+        >
+          <RiNextjsFill className='text-6xl text-gray-300' />
         </motion.div>
         <Tooltip id='nodejs-tooltip' />
         <motion.div
